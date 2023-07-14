@@ -1,2 +1,2 @@
 # university
-Laboratory and independent work done while studying at SurSU
+Laboratory and independent work done while studying at SurGU
