@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="/figures/sphere" method="post">
+         <div class="form-wrap">
+             <label>Радиус
+                 <input type="text" name="r" required {%if err_r%} placeholder="Ошибка! Укажите число" {% endif %}>
+             </label>
+         </div>
+        <div class="form-wrap">
+             <label>Материал
+                 <select name="p">
+                    <option selected="selected" value="8.96">Медь</option>
+                    <option value="7.874">Железо</option>
+                    <option value="7.3">Олово</option>
+                 </select>
+             </label>
+         </div>
+
+        <div class="form-wrap submit">
+            <input type="submit" value="Рассчитать" class="btn">
+        </div>
+    </form>
+
+{% endblock %}
+

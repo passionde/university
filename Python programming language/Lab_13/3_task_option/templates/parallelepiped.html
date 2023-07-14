@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="/figures/parallelepiped" method="post">
+         <div class="form-wrap">
+             <label>Длина ребра
+                 <input type="text" name="a" required {%if err_a%} placeholder="Ошибка! Укажите число" {% endif %}>
+             </label>
+         </div>
+        <div class="form-wrap">
+             <label>Ширина ребра
+                 <input type="text" name="b" required {%if err_b%} placeholder="Ошибка! Укажите число" {% endif %}>
+             </label>
+        </div>
+        <div class="form-wrap">
+             <label>Высота
+                 <input type="text" name="h" required {%if err_h%} placeholder="Ошибка! Укажите число" {% endif %}>
+             </label>
+        </div>
+        <div class="form-wrap">
+             <label>Материал
+                 <select name="p">
+                    <option selected="selected" value="8.96">Медь</option>
+                    <option value="7.874">Железо</option>
+                    <option value="7.3">Олово</option>
+                 </select>
+             </label>
+         </div>
+
+        <div class="form-wrap submit">
+            <input type="submit" value="Рассчитать" class="btn">
+        </div>
+    </form>
+
+{% endblock %}
+
