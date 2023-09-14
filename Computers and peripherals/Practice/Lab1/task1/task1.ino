@@ -1,10 +1,8 @@
-// the setup function runs once when you press reset or power the board
+// Задание: реализовать мигание лампочки D0
 void setup() {
-  // initialize digital pin D0 as an output.
   pinMode(D0, OUTPUT);
 }
 
-// the loop function runs over and over again forever
 void loop() {
   digitalWrite(D0, HIGH); 
   delay(50);  

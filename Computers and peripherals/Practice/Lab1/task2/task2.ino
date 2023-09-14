@@ -1,6 +1,5 @@
-// the setup function runs once when you press reset or power the board
+// Задание: при удержании кнопки D1 должна гореть лампока D0
 void setup() {
-  // initialize digital pin D0 as an output.
   pinMode(D0, OUTPUT);
   pinMode(D1, INPUT);
 }
