@@ -8,7 +8,5 @@ void setup() {
 void loop() {
   sensorValue = analogRead(A0);
   outputValue = map(sensorValue, 0, 4095, 0, 255);
-
   analogWrite(D0, outputValue);
-  delay(2);
 }
