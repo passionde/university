@@ -1,13 +1,4 @@
-﻿using System.IO.Pipes;
-using System.Runtime.CompilerServices;
-
-public struct Data
-{
-    public int num;
-    public bool flag;
-}
-
-class PipeServer
+﻿class PipeServer
 {
     static void Main()
     {
@@ -15,26 +6,24 @@ class PipeServer
         using NamedPipeServerStream pipeServer = new("channel", PipeDirection.InOut);
         pipeServer.WaitForConnection();
 
-        StreamWriter sw = new(pipeServer)
-        {
-            AutoFlush = true
-        };
-
         // Создание сообщения, преобразование в byte
-        Data msg = new()
+        DataRequest msg = new()
         {
-            num = 1,
-            flag = false
+            Number = 1,
+            Flag = false
         };
 
-        byte[] bytes = new byte[Unsafe.SizeOf<Data>()];
-        Unsafe.As<byte, Data>(ref bytes[0]) = msg;
-        sw.BaseStream.Write(bytes, 0, bytes.Length);
+        byte[] bytes = new byte[Unsafe.SizeOf<DataRequest>()];
+        Unsafe.As<byte, DataRequest>(ref bytes[0]) = msg;
+        pipeServer.Write(bytes, 0, bytes.Length);
+
+        Console.WriteLine($"1. Отправлены данные: num = {msg.Number}, flag = {msg.Flag}");
 
         // Получение обновленных данных от клиента
-        byte[] received_bytes = new byte[Unsafe.SizeOf<Data>()];
-        sw.BaseStream.Read(received_bytes, 0, received_bytes.Length);
-        Data received_data = Unsafe.As<byte, Data>(ref received_bytes[0]);
-        Console.WriteLine($"Received data: num = {received_data.num}, flag = {received_data.flag}");
+        byte[] received_bytes = new byte[Unsafe.SizeOf<DataRequest>()];
+        pipeServer.Read(received_bytes, 0, received_bytes.Length);
+
+        DataRequest received_data = Unsafe.As<byte, DataRequest>(ref received_bytes[0]);
+        Console.WriteLine($"4. Получен ответ от клиента: num = {received_data.Number}, flag = {received_data.Flag}");
     }
 }
