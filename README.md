@@ -1,10 +1,14 @@
-# university
-Laboratory and independent work done while studying at SurGU
-- Алгоритмические языки программирования [repo](https://github.com/passionde/sursu-algorithmic-programming-languages)
-- Искусственные нейронные сети [repo](https://github.com/passionde/sursu-artificial-neural-networks)
-- Основы программирования [repo](https://github.com/passionde/sursu-basics-of-programming)
-- ЭВМ и периферийные устройства [repo](https://github.com/passionde/sursu-computers-and-peripherals)
-- Базы данных и базы знаний [repo](https://github.com/passionde/sursu-databases-and-knowledge-bases)
-- Операционные системы [repo](https://github.com/passionde/sursu-operating-systems)
-- Системное программирование [repo](https://github.com/passionde/sursu-system-software)
-- Инструменты, подходы и методы обработки данных [repo](https://github.com/passionde/sursu-tools-approaches-and-methods-of-data-processing)
+# Сборник лабораторных и практических работ 📚
+### СурГУ | Информатика и вычислительная техника
+
+Добро пожаловать в мой репозиторий! Здесь я собрал все лабораторные и практические работы, которые выполнял во время своего обучения в СурГУ по специальности "Информатика и вычислительная техника". Эти материалы предоставляются с надеждой помочь студентам в понимании и выполнении своих работ. Если вы нашли что-то полезное для себя, не забудьте поставить ⭐️ звездочку.
+
+### 📁 Дисципины:
+- 📘 [**Алгоритмические языки программирования**](https://github.com/passionde/sursu-algorithmic-programming-languages)
+- 📘 [**Искусственные нейронные сети**](https://github.com/passionde/sursu-artificial-neural-networks)
+- 📘 [**Основы программирования**](https://github.com/passionde/sursu-basics-of-programming)
+- 📘 [**ЭВМ и периферийные устройства**](https://github.com/passionde/sursu-computers-and-peripherals)
+- 📘 [**Базы данных и базы знаний**](https://github.com/passionde/sursu-databases-and-knowledge-bases)
+- 📘 [**Операционные системы**](https://github.com/passionde/sursu-operating-systems)
+- 📘 [**Системное программирование**](https://github.com/passionde/sursu-system-software)
+- 📘 [**Инструменты, подходы и методы обработки данных**](https://github.com/passionde/sursu-tools-approaches-and-methods-of-data-processing)
