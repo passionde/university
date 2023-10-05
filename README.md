@@ -5,10 +5,9 @@
 
 ### 📁 Дисципины:
 - 📘 [**Алгоритмические языки программирования**](https://github.com/passionde/sursu-algorithmic-programming-languages)
-- 📘 [**Искусственные нейронные сети**](https://github.com/passionde/sursu-artificial-neural-networks)
 - 📘 [**Основы программирования**](https://github.com/passionde/sursu-basics-of-programming)
 - 📘 [**ЭВМ и периферийные устройства**](https://github.com/passionde/sursu-computers-and-peripherals)
 - 📘 [**Базы данных и базы знаний**](https://github.com/passionde/sursu-databases-and-knowledge-bases)
 - 📘 [**Операционные системы**](https://github.com/passionde/sursu-operating-systems)
 - 📘 [**Системное программирование**](https://github.com/passionde/sursu-system-software)
-- 📘 [**Инструменты, подходы и методы обработки данных**](https://github.com/passionde/sursu-tools-approaches-and-methods-of-data-processing)
+- 📘 [**WEB - программирование**](https://github.com/passionde/sursu-web-programming)
